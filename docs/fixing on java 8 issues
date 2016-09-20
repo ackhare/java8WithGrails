@@ -1,0 +1,7 @@
+http://stackoverflow.com/questions/28880781/incompatible-jvm-in-ggts-eclipse-and-java-1-8
+
+I updated my springloaded jar to version 1.2.4.BUILD-SNAPSHOT (from 1.2.1) and that resolved the issue. (Latest version can be found in the Spring repo)
+
+    Go to your local Grails lib directory to find springloaded jar. For me that was /usr/local/Cellar/grails/2.4.4/libexec/lib/org.springframework/springloaded/jars/
+    remove existing 1.2.1 jars (I removed pom file, too, but not necessary)
+    download latest springloaded jar and place into the jars subdir: wget http://repo.spring.io/libs-snapshot-local/org/springframework/springloaded/1.2.4.BUILD-SNAPSHOT/springloaded-1.2.4.BUILD-SNAPSHOT.jar
